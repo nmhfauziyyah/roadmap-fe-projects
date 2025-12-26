@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO META TAG (GOOGLE) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Basic HTML website by Your Name">
+    <title>NFA | Professional Portfolio</title>
+
+    <!-- OG TAG (APPS)-->
+    <meta property="og:title" content="Your Name | Frontend Developer">
+    <meta property="og:description" content="Basic HTML website by Semantic">
+    <meta property="og:type" content="website">
+
+    <!-- CSS CONNECT -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap">
+
+    <!-- LOGO -->
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- HEADER SECTION-->
+    <header>
+        <div href="index.html" class="logo">
+            <img src="favicon.ico" alt="Your Name Logo">
+            <strong>Get To Know NFA</strong>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN SECTION-->
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <h1>Frontend Developer</h1>
+            <p>Crafting beautiful, responsive, and user-friendly web interfaces with modern technologies.</p>
+        </section>
+
+        <!-- MAIN CONTENT GRID -->
+        <div class="main-grid">
+
+            <!-- PROJECTS CARD-->
+            <section class="card">
+                <h2>Projects</h2>
+                <ul>
+                    <li>HTML Only Portfolio</li>
+                    <li>Calculator</li>
+                    <li>Quiz Master App</li>
+                    <li>Next-Gen Countdown</li>
+                    <li>E-Commerce Landing</li>
+                </ul>
+                <div style="margin-top: 1.5rem;">
+                    <a href="projects.html" class="btn-link">View all projects &rarr;</a>
+                </div>
+            </section>
+
+            <!-- WORK EXPERIENCE CARD -->
+            <section class="card"> 
+                <h2>Work Experience</h2>
+
+                <article class="experience-item">
+                    <h3>Roadmap.sh</h3>
+                    <p>Building foundational skills through real-world challenges.</p>
+                    <a href="#" class="btn-link">Visit my Profile</a>
+                </article>
+
+                <article class="experience-item">
+                    <h3>Open Source Work</h3>
+                    <p>Contributed to 50+ repositories in the frontend ecosystem</p>
+                    <a href="#" class="btn-link">Github Presence</a>
+                </article>
+            </section>
+            
+
+            <!-- EDUCATION CARD-->
+            <section class="card">
+                <h2>Education</h2>
+                <p style="margin-bottom: 1rem;">Graduated with honors (3.76 CGPA).</p>
+                <h3 style="font-size: 0.9rem; text-transform: uppercase; color: var(--accent); letter-spacing: 0.05em;">Key Courses</h3>
+
+                <ul>
+                    <li>Object Oriented Programming</li>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Web Systems Engineering</li>
+                    <li>UI/UX Principles</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- REVIEWS SECTION-->
+        <section class="reviews-section">
+            <h2>Kind Words from Mentors</h2>
+
+            <div class="reviews-grid">
+                <article class="reviews-card">
+                    <p>"Ni'mah is a fast learner with a keen eye for modern UI patterns. His dedication is unmatched."</p>
+                    <div class="reviewer-info">
+                        <strong>Jane Cooper</strong>
+                        <span>Senior Professor, Web Tech</span>
+                    </div>
+                </article>
+
+                <article class="reviews-card">
+                    <p>"One of the most organized students I've ever taught. Her semantic approach makes his code top-tier."</p>
+                    <div class="reviewer-info">
+                        <strong>John Smith</strong>
+                        <span>Lead Instructor</span>
+                    </div>
+                </article>
+
+                <article class="reviews-card">
+                    <p>"Excellent problem-solving skills and a great team player during complex frontend challenges."</p>
+                    <div class="reviewer-info">
+                        <strong>Dr. Robert Fox</strong>
+                        <span>Department Head</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" style="margin-top: 6rem;">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-family: 'Poppins', sans-serif; font-size: 2rem;">Get In Touch</h2>
+                <p style="color: var(--text-muted);">Have a project in mind? Let's build something amazing.</p>
+            </div>
+
+            <div class="contact-form">
+                <form action="#" method="POST" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" rows="5" placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="primary-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- FOOTER SECTION-->
+    <footer>
+        <p>© 2025 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
