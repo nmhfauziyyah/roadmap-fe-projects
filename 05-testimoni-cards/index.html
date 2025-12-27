@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Fusion - Seamless Experience</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- LOGO -->
+    <link rel="icon" href="assets/coffee.png"
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <!-- HERO CARD -->
+        <div class="card-stack" id="coffeeStack">
+
+            <!-- COFFE CARD -->
+            <!-- KOPI 1 -->
+            <div class="coffee-card">
+                <img src="assets/kopi1.jpg" alt="Midnight Coffee Blue" width="30%">
+                <div>
+                    <h4>Midnight Blue</h4>
+                    <p class="card-desc">Deep & Intense Roast</p>
+                </div>
+            </div>
+
+            <!-- KOPI 2 -->
+            <div class="coffee-card">
+                <img src="assets/kopi2.jpg" alt="Neon Purple Coffee" width="30%">
+                <div>
+                    <h4>Neon Purple</h4>
+                    <p class="card-desc">Electric Energy Blend</p>
+                </div>
+            </div>
+
+            <!-- KOPI 3 -->
+            <div class="coffee-card main-card">
+                <img src="assets/kopi3.jpg" alt="Cosmic Brown Coffee" width="30%">
+                <div>
+                    <h4>Cosmic Brown</h4>
+                    <p class="card-desc">Sweet Caramel Nebula</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- HERO TEXT SECTION -->
+         <div class="hero-text">
+            <h1>Beyond<br>The Beans.</h1>
+            <p>
+                Experience a new dimensions of coffee through a futuristic interface.
+                Every cup is a journey across flavors yet to be discovered.
+            </p>
+         </div>
+    </section>
+
+    <!-- REVIEWER SECTIONS -->
+    <section class="reviewer-section">
+        <h2 class="section-title">
+            Trusted by the Experts
+        </h2>
+
+        <div class="marquee-wrapper">
+            <div class="marquee-content" id="marqueeContent">
+
+                <!-- REVIEWER 1 -->
+                <div class="glass-reviewer-card">
+                    <img src="assets/Gordon-Ramsay.png" alt="Gordon Ramsay" width="30%" class="reviewer-avatar">
+                    <h3>Gordon Ramsay</h3>
+                    <span class="role">Chef & Food Critic</span>
+                    <div class="rating">★★★★★</div>
+                    <p>
+                        "This Coffee is absolutely outstanding.
+                        The Balance of dark chocolate and subtle cherry notes is simply brilliant."
+                    </p>
+                </div>
+
+                <!-- REVIEWER 2 -->
+                <div class="glass-reviewer-card">
+                    <img src="assets/taylor.jpg" alt="Taylot Swift" width="30%" class="reviewer-avatar">
+                    <h3>Taylor Swift</h3>
+                    <span class="role">Songwriter & Storyteller</span>
+                    <div class="rating">★★★★★</div>
+                    <p>
+                        "The aroma feels poetic, and the flavor lingers like a love song after the last sip."
+                    </p>
+                </div>
+
+                <!-- REVIEWER 3 -->
+                <div class="glass-reviewer-card">
+                    <img src="assets/billgates.jpeg" alt="Bill Gates" width="30%" class="reviewer-avatar">
+                    <h3>Bill Gates</h3>
+                    <span class="role">Philanthropist & Investor</span>
+                    <div class="rating">★★★★☆</div>
+                    <p>
+                        "After analyzing the consistency, the quality is impressive.
+                        A smart and reliable way to start the day."
+                    </p>
+                </div>
+
+                <!-- REVIEWER 4 -->
+                <div class="glass-reviewer-card">
+                    <img src="assets/elonmusk.jpeg" alt="Elon Musk" width="30%" class="reviewer-avatar">
+                    <h3>Elon Musk</h3>
+                    <span class="role">CEO of Tesla Motors</span>
+                    <div class="rating">★★★★☆</div>
+                    <p>
+                        "The coffee is really nice!"
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SUBMIT REVIEW SECTION -->
+    <section class="submit-section">
+        <div class="submit-card">
+            <h2>Join the Conversation</h2>
+            <p>Have thoughts about our blends? Share your experience with us!</p>
+
+            <form id="reviewForm">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" id="guestName" placeholder="Ex: John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Your Review</label>
+                    <textarea id="guestMessage" rows="4" placeholder="This coffee tastes like ..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Review</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- SCRIPT -->
+    <script>
+        const marquee = document.getElementById('marqueeContent');
+        const form = document.getElementById('reviewForm');
+
+        function setupMarquee(){
+            marquee.innerHTML += marquee.innerHTML;
+        }
+
+        window.onload = () => {
+            setTimeout(() => {
+                document.getElementById('coffeeStack').classList.add('stack-active');
+            }, 500);
+            setupMarquee();
+        }
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            alert("Thank you! Your 5-star review has been submitted!");
+            form.reset();
+        });
+    </script>
+</body>
+</html>

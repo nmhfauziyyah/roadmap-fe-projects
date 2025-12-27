@@ -11,3 +11,7 @@ https://roadmap.sh/projects/portfolio-website <br>
 ## 04-changelog-component : 
 https://roadmap.sh/projects/changelog-component <br>
 - output : https://nmhfauziyyah.github.io/roadmap-fe-projects/04-changelog/index.html
+
+## 05-testimoni-cards : 
+https://roadmap.sh/projects/testimonial-cards<br>
+- output : https://nmhfauziyyah.github.io/roadmap-fe-projects/05-testimoni-cards/index.html
