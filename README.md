@@ -15,3 +15,7 @@ https://roadmap.sh/projects/changelog-component <br>
 ## 05-testimoni-cards : 
 https://roadmap.sh/projects/testimonial-cards<br>
 - output : https://nmhfauziyyah.github.io/roadmap-fe-projects/05-testimoni-cards/index.html
+
+## 06-datepicker : 
+https://roadmap.sh/projects/datepicker-ui<br>
+- output : https://nmhfauziyyah.github.io/roadmap-fe-projects/06-datepicker/index.html
